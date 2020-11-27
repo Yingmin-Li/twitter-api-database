@@ -7,7 +7,7 @@ class TestTweetViews(TestCase):
     def create_app(self):
         app = create_app()
         app.config['TESTING'] = True
-        app.config['SQLALCHEMY_DATABASE_URI'] = f"{app.config['SQLALCHEMY_DATABASE_URI']}_test"
+        app.config['SQLALCHEMY_DATABASE_URI'] = f"{app.config['SQLALCHEMY_DATABASE_URI']}"
         return app
 
     def setUp(self):
