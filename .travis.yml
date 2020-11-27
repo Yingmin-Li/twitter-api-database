@@ -10,6 +10,6 @@ install:
 before_script:
   - psql -c 'CREATE DATABASE twitter_api_flask_test;' -U postgres
 env:
-  - DATABASE_URL="postgresql://localhost/twitter_api_flask"
+  - DATABASE_URL="postgres://xfboycvcdumbzs:dd68b7a37c148edebb001b5fc1fbb073b844f85875e812f2408b6ae8cfe24fd4@ec2-52-212-157-46.eu-west-1.compute.amazonaws.com:5432/ddlbd014t483fm"
 script:
   - pipenv run nosetests
